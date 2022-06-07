@@ -1,4 +1,5 @@
 import React from 'react';
+import MyPosts from './Myposts/MyPosts';
 import s from './Profile.module.css';
 const Profile = () => {
     return <div className={s.content}>
@@ -8,21 +9,8 @@ const Profile = () => {
         <div>
             <img src='https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg' />
         </div>
-        <div>
-            My posts
-            <div>
-                New post
-            </div>
-            <div className={s.posts}>
-                <div className={s.item}>
-                    1 post
-                </div>
-                <div className={s.item}>
-                    2 post
-                </div>
-            </div>
+        <MyPosts />
 
-        </div>
     </div >
 }
 export default Profile;
